@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="0" failed="0" skipped="10">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-28T12:10:58 UTC" name="AriaCJ Location Testing" finished-at="2021-03-28T12:10:59 UTC" duration-ms="711">
+    <groups>
+    </groups>
+    <test started-at="2021-03-28T12:10:58 UTC" name="Location Availability Test" finished-at="2021-03-28T12:10:59 UTC" duration-ms="711">
+      <class name="com.ariacj.testcases.LocationAvailableTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:58 UTC" name="setUp" finished-at="2021-03-28T12:10:58 UTC" duration-ms="328" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginIn()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:58 UTC" name="loginIn" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1616933458530" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIn -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=THE BOULEVARD OUTLET PARK}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 24-26 MCARTHUR GLEN DESIGNER OUTLET VILLAGE}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=CHESHIRE OAKS OUTLET VILLAGE,}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=FREEPORT, UNIT 4,}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 57-59 EAST MIDLANDS DESIGNER OUTLET}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=17-21 GRETNA GATEWAY OUTLET VILLAGE}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=15 HANBURY STREET,}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=GOVERNMENT BUILDING}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=5 LIVINGSTON}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T12:10:59 UTC" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 48/49, MCARTHUR GLEN DESIGNER OUTLET,}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/net/UrlChecker$TimeoutException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/net/UrlChecker$TimeoutException
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at com.ariacj.base.TestBase.setUp(TestBase.java:126)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.net.UrlChecker$TimeoutException
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+... 21 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@77659b30]" started-at="2021-03-28T12:10:59 UTC" name="tearDown" finished-at="1970-01-01T00:00:00 UTC" duration-ms="-1616933459237" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ariacj.testcases.LocationAvailableTest -->
+    </test> <!-- Location Availability Test -->
+  </suite> <!-- AriaCJ Location Testing -->
+</testng-results>

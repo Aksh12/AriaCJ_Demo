@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sun_Mar_28_17_52_18_UTC_2021.png>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Sun_Mar_28_17_52_18_UTC_2021.png><img src=Sun_Mar_28_17_52_18_UTC_2021.png height=200 width=200></img></a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-03-28T17:50:32 UTC" name="AriaCJ Location Testing" finished-at="2021-03-28T17:53:25 UTC" duration-ms="173333">
+    <groups>
+    </groups>
+    <test started-at="2021-03-28T17:50:32 UTC" name="Location Availability Test" finished-at="2021-03-28T17:53:25 UTC" duration-ms="173333">
+      <class name="com.ariacj.testcases.LocationAvailableTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:50:23 UTC" name="setUp" finished-at="2021-03-28T17:50:32 UTC" duration-ms="8694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="loginIn()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:50:32 UTC" name="loginIn" finished-at="2021-03-28T17:50:55 UTC" duration-ms="23398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIn -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:50:55 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:51:21 UTC" duration-ms="25203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=THE BOULEVARD OUTLET PARK}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:51:21 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:51:31 UTC" duration-ms="10448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 24-26 MCARTHUR GLEN DESIGNER OUTLET VILLAGE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:51:31 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:52:06 UTC" duration-ms="34215" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=CHESHIRE OAKS OUTLET VILLAGE,}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:52:06 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:52:18 UTC" duration-ms="12291" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=FREEPORT, UNIT 4,}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No building available with name  : FREEPORT, UNIT 4,]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No building available with name  : FREEPORT, UNIT 4,
+at org.testng.Assert.fail(Assert.java:99)
+at com.ariacj.testcases.LocationAvailableTest.LocationAvaliablityTest(LocationAvailableTest.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sun_Mar_28_17_52_18_UTC_2021.png>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Sun_Mar_28_17_52_18_UTC_2021.png><img src=Sun_Mar_28_17_52_18_UTC_2021.png height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:52:18 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:52:29 UTC" duration-ms="11023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 57-59 EAST MIDLANDS DESIGNER OUTLET}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:52:29 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:52:39 UTC" duration-ms="9901" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=17-21 GRETNA GATEWAY OUTLET VILLAGE}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:52:39 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:52:49 UTC" duration-ms="9526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=15 HANBURY STREET,}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:52:49 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:53:01 UTC" duration-ms="12103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=GOVERNMENT BUILDING}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:53:01 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:53:15 UTC" duration-ms="14660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=5 LIVINGSTON}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method signature="LocationAvaliablityTest(java.util.Map)[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:53:15 UTC" name="LocationAvaliablityTest" data-provider="LocationDataInput" finished-at="2021-03-28T17:53:25 UTC" duration-ms="9540" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Building data from excel=UNIT 48/49, MCARTHUR GLEN DESIGNER OUTLET,}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LocationAvaliablityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ariacj.testcases.LocationAvailableTest@5167f57d]" started-at="2021-03-28T17:53:25 UTC" name="tearDown" finished-at="2021-03-28T17:53:25 UTC" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ariacj.testcases.LocationAvailableTest -->
+    </test> <!-- Location Availability Test -->
+  </suite> <!-- AriaCJ Location Testing -->
+</testng-results>

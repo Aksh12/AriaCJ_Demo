@@ -1,0 +1,6 @@
+com\ariacj\base\TestBase.class
+com\ariacj\utilities\ExcelReader.class
+com\ariacj\listeners\CustomListeners.class
+com\ariacj\utilities\ExtentManager.class
+com\ariacj\utilities\TestUtil.class
+com\ariacj\testcases\LocationAvailableTest.class

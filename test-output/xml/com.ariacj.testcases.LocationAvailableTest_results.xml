@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Location Availability Test"
+           tests="10"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="100.081">
+  <properties />
+            <testcase name="LocationAvaliablityTest" time="12.320" classname="com.ariacj.testcases.LocationAvailableTest">
+                <failure type="java.lang.AssertionError"
+                  message="No building available with name  : FREEPORT, UNIT 4,"
+              >
+<![CDATA[java.lang.AssertionError: No building available with name  : FREEPORT, UNIT 4,
+  org.testng.Assert.fail(Assert.java:99)
+  com.ariacj.testcases.LocationAvailableTest.LocationAvaliablityTest(LocationAvailableTest.java:178)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+  org.testng.TestRunner.privateRun(TestRunner.java:764)
+  org.testng.TestRunner.run(TestRunner.java:585)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.runSuites(TestNG.java:1069)
+  org.testng.TestNG.run(TestNG.java:1037)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="LocationAvaliablityTest" time="12.266" classname="com.ariacj.testcases.LocationAvailableTest">
+                <failure type="java.lang.AssertionError"
+                  message="No building available with name  : 5 LIVINGSTON"
+              >
+<![CDATA[java.lang.AssertionError: No building available with name  : 5 LIVINGSTON
+  org.testng.Assert.fail(Assert.java:99)
+  com.ariacj.testcases.LocationAvailableTest.LocationAvaliablityTest(LocationAvailableTest.java:178)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:566)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+  org.testng.TestRunner.privateRun(TestRunner.java:764)
+  org.testng.TestRunner.run(TestRunner.java:585)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.runSuites(TestNG.java:1069)
+  org.testng.TestNG.run(TestNG.java:1037)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="LocationAvaliablityTest" time="9.039" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="6.869" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="11.584" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="6.581" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="6.879" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="6.200" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="6.702" classname="com.ariacj.testcases.LocationAvailableTest" />
+                <testcase name="LocationAvaliablityTest" time="21.641" classname="com.ariacj.testcases.LocationAvailableTest" />
+      
+</testsuite>
