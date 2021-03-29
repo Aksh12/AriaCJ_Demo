@@ -88,10 +88,17 @@ public class LocationAvailableTest extends TestBase {
 		driver.findElement(By.xpath("//input[@id='size-small-standard']")).sendKeys(data.get("Building data from excel").toString());
 		List<WebElement> dropDown = driver.findElements(By.xpath("//li[@class='MuiAutocomplete-option']"));
 
-
-		int x1 = dropDown.size();
 	
-		if(dropDown.size()>0) {
+		int n1=0;
+		for(int i=0; i<dropDown.size(); i++) {
+			if(dropDown.get(i).getText().equals(testName)) {
+				n1++;
+			}
+		}
+		int x1 = n1;
+	
+		if(n1>0) {
+
 			if(dropDown.get(0).getText().equals(data.get("Building data from excel").toString())) {
 				dropDown.get(0).click();
 
@@ -118,9 +125,12 @@ public class LocationAvailableTest extends TestBase {
 
 							Assert.assertEquals(currentLocation, defaultLocation);
 
+						}else {
+							sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
+							sheet1.getRow(count).createCell(3).setCellValue(x1);
 						}
 					}}catch(Exception e) {
-						sheet1.getRow(count).createCell(2).setCellValue("Either Took time to load, current location or default location");
+						sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
 						sheet1.getRow(count).createCell(3).setCellValue(x1);
 
 					}
