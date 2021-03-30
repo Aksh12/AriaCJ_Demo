@@ -70,14 +70,12 @@ public class LocationAvailableTest extends TestBase {
 		if(count==0) {
 			Thread.sleep(15000);
 		}
-	
-
 
 		if(flag==true) {
 			driver.findElement(By.xpath("//h5[@class='MuiTypography-root MuiTypography-h5']")).click();
 			flag=false;
 		}
-		
+
 		count= count+1;
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='MuiAutocomplete-endAdornment']"))).isDisplayed();
 
@@ -88,7 +86,6 @@ public class LocationAvailableTest extends TestBase {
 		driver.findElement(By.xpath("//input[@id='size-small-standard']")).sendKeys(data.get("Building data from excel").toString());
 		List<WebElement> dropDown = driver.findElements(By.xpath("//li[@class='MuiAutocomplete-option']"));
 
-	
 		int n1=0;
 		for(int i=0; i<dropDown.size(); i++) {
 			if(dropDown.get(i).getText().equals(testName)) {
@@ -96,47 +93,60 @@ public class LocationAvailableTest extends TestBase {
 			}
 		}
 		int x1 = n1;
-	
+
 		if(n1>0) {
 
-			if(dropDown.get(0).getText().equals(data.get("Building data from excel").toString())) {
-				dropDown.get(0).click();
+			for(int i=0; i<=dropDown.size(); i++) {
+				if(dropDown.get(i).getText().equals(data.get("Building data from excel").toString())) {
+					dropDown.get(i).click();
 
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='MuiTypography-root MuiLink-root MuiLink-underlineHover jss18 MuiLink-button MuiTypography-colorPrimary'][2]"))).isDisplayed();
-				driver.findElement(By.xpath("//button[@class='MuiTypography-root MuiLink-root MuiLink-underlineHover jss18 MuiLink-button MuiTypography-colorPrimary'][2]")).click();
-
-				try {
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/preceding::input[@value=\""+data.get("Building data from excel").toString()+"\"]"))).isDisplayed();
-					String currentLocation = driver.findElement(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/preceding::input[@value=\""+data.get("Building data from excel").toString()+"\"]")).getAttribute("value");
-
-					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/following::input[@value=\""+data.get("Building data from excel").toString()+"\"]"))).isDisplayed();
-					String defaultLocation = driver.findElement(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/following::input[@value=\""+data.get("Building data from excel").toString()+"\"]")).getAttribute("value");
-					if(currentLocation.equals(defaultLocation)) {
-						System.out.print(count+") CurrentLocation : " +  currentLocation);
-						System.out.print(" , DefaultLocation : " + defaultLocation);
-						if(currentLocation.contentEquals(defaultLocation)) {
-
-							System.out.println(" = Pass"); 
-							//System.out.println(" = Pass : if : " +  count + ", Size = " + dropDown.size());
-
-							sheet1.getRow(count).createCell(2).setCellValue("Yes");
-							sheet1.getRow(count).createCell(3).setCellValue(x1);
-							sheet1.getRow(count).createCell(4).setCellValue(defaultLocation);
-
-							Assert.assertEquals(currentLocation, defaultLocation);
-
-						}else {
-							sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
-							sheet1.getRow(count).createCell(3).setCellValue(x1);
-						}
-					}}catch(Exception e) {
-						sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
-						sheet1.getRow(count).createCell(3).setCellValue(x1);
-
-					}
+					break;
+				}
 			}
 
-		}else {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='MuiTypography-root MuiLink-root MuiLink-underlineHover jss18 MuiLink-button MuiTypography-colorPrimary'][2]"))).isDisplayed();
+			driver.findElement(By.xpath("//button[@class='MuiTypography-root MuiLink-root MuiLink-underlineHover jss18 MuiLink-button MuiTypography-colorPrimary'][2]")).click();
+
+			try {
+
+				for(int i=0; i<=5; i++) {
+					String x = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/following::input[@id='size-small-standard']"))).getAttribute("value");
+					if(x!=null) {
+						break;
+					}
+
+				}
+
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/preceding::input[@value=\""+data.get("Building data from excel").toString()+"\"]"))).isDisplayed();
+				String currentLocation = driver.findElement(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/preceding::input[@value=\""+data.get("Building data from excel").toString()+"\"]")).getAttribute("value");
+
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/following::input[@value=\""+data.get("Building data from excel").toString()+"\"]"))).isDisplayed();
+				String defaultLocation = driver.findElement(By.xpath("//ol[@class='MuiBreadcrumbs-ol']/following::input[@value=\""+data.get("Building data from excel").toString()+"\"]")).getAttribute("value");
+				if(currentLocation.equals(defaultLocation)) {
+					System.out.print(count+") CurrentLocation : " +  currentLocation);
+					System.out.print(" , DefaultLocation : " + defaultLocation);
+					if(currentLocation.contentEquals(defaultLocation)) {
+
+						System.out.println(" = Pass"); 
+						//System.out.println(" = Pass : if : " +  count + ", Size = " + dropDown.size());
+
+						sheet1.getRow(count).createCell(2).setCellValue("Yes");
+						sheet1.getRow(count).createCell(3).setCellValue(x1);
+						sheet1.getRow(count).createCell(4).setCellValue(defaultLocation);
+
+						Assert.assertEquals(currentLocation, defaultLocation);
+
+					}else {
+						sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
+						sheet1.getRow(count).createCell(3).setCellValue(x1);
+					}
+				}}catch(Exception e) {
+					sheet1.getRow(count).createCell(2).setCellValue("Re-run:Either Took time to load, current location or default location");
+					sheet1.getRow(count).createCell(3).setCellValue(x1);
+
+				}
+		}
+		else {
 
 			sheet1.getRow(count).createCell(2).setCellValue("No");
 			sheet1.getRow(count).createCell(4).setCellValue(data.get("Building data from excel").toString());
@@ -144,21 +154,21 @@ public class LocationAvailableTest extends TestBase {
 			System.out.println(count+") No building found with Name" + " :" + data.get("Building data from excel").toString() + " = Fail ");
 			flag=true;
 			Assert.fail("No building available with name  : " + data.get("Building data from excel").toString());
-			
+
 
 
 		}
-	
-}
-	
 
-	
+	}
+
+
+
 	@AfterTest
 	public void tearDown() {
-	try {
+		try {
 			fout=new FileOutputStream(src);
 		} catch (FileNotFoundException e) {
-		e.printStackTrace();
+			e.printStackTrace();
 		}
 		try {
 			wb.write(fout);
